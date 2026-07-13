@@ -44,46 +44,6 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: 1,
-    title: 'Brand Identity – Glistenspace Cleaners',
-    category: 'Brand Identity',
-    description: 'Complete brand identity system for a corporate office cleaning company, including logo, business cards, vehicle branding, and marketing materials.',
-    image: '/images/glistenspace/logo.jpg',
-    details: 'Developed a comprehensive brand identity for Glistenspace Cleaners, a professional corporate office cleaning service. The project included logo design, business card design, poster designs, roll-up banners, and vehicle branding. The visual identity conveys professionalism, cleanliness, and reliability—key values for their B2B clientele.',
-    year: '2023',
-    tags: ['Logo Design', 'Business Cards', 'Vehicle Branding', 'Print Design'],
-    client: 'Glistenspace Cleaners',
-    role: 'Lead Brand Designer',
-    timeline: '3 Months',
-    challenge: 'Glistenspace needed to stand out in a crowded market of cleaning services. They required a visual identity that communicated trust, premium quality, and corporate professionalism without appearing sterile or generic. The challenge was to create a cohesive system that worked equally well on a business card as it did on a moving vehicle.',
-    solution: 'We developed a clean, modern visual language using a palette of trustworthy blues and pristine whites. The logo symbol combines a sparkle motif with architectural geometry, suggesting "cleaning for built environments." The typography is strong and legible, reinforcing reliability. We extended this identity across all touchpoints, ensuring that every interaction—from a handed business card to a van passing on the street—communicated the same promise of excellence.',
-    results: 'The new identity has helped Glistenspace secure contracts with three major corporate parks within six months of launch. The cohesive fleet branding has served as a powerful mobile billboard, generating 40% of their inbound inquiries.',
-    metrics: [
-      { label: 'Client Acquisition', value: '+40%', description: 'Increase in inbound inquiries via fleet branding' },
-      { label: 'Market Reach', value: '3', description: 'Major corporate contracts secured in 6 months' },
-      { label: 'Brand Consistency', value: '100%', description: 'Unified visual language across all assets' }
-    ],
-    process: [
-      {
-        title: 'Discovery & Strategy',
-        description: 'Analyzed local competitors and defined the "Corporate Premium" positioning strategy.'
-      },
-      {
-        title: 'Visual Exploration',
-        description: 'Explored concepts focusing on "Sparkle," "Shield," and "Structure" motifs.'
-      },
-      {
-        title: 'Refinement & System',
-        description: 'Selected the geometric sparkle direction and built the comprehensive design system.'
-      }
-    ],
-    gallery: [
-      '/images/glistenspace/business-card.jpg',
-      '/images/glistenspace/van.jpg',
-      '/images/glistenspace/rollup.jpg'
-    ]
-  },
-  {
-    id: 2,
     title: 'Brand Identity – Mecha Travel Group',
     category: 'Brand Identity',
     description: 'Complete brand identity redesign for established travel company, including modern logo refresh, comprehensive brand guidelines, and digital marketing assets',
@@ -126,7 +86,7 @@ export const projects: Project[] = [
     ]
   },
   {
-    id: 3,
+    id: 2,
     title: 'Brand Identity – BestBaby',
     category: 'Brand Identity',
     description: 'Complete brand identity and marketing materials for baby products brand',
@@ -161,7 +121,7 @@ export const projects: Project[] = [
     gallery: []
   },
   {
-    id: 4,
+    id: 3,
     title: 'Publication Design – TYPNI',
     category: 'Publication Design',
     description: 'Editorial design and layout for academic publication',
@@ -192,7 +152,7 @@ export const projects: Project[] = [
     gallery: []
   },
   {
-    id: 5,
+    id: 4,
     title: 'Online Platform – BiashAra',
     category: 'Product Design',
     description: 'An online platform designed to support Kenyan entrepreneurs in turning their ideas into thriving businesses.',
