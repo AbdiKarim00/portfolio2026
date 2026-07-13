@@ -1,6 +1,6 @@
-# Your Senior Graphic Designer Portfolio
+# Abdikarim Singir Portfolio
 
-Welcome! Your professional portfolio website is ready to showcase your design expertise. This README helps you get started customizing it.
+Welcome! This repository contains the professional portfolio website for Abdikarim Singir, a senior graphic designer. It is configured for local development and production deployment.
 
 ---
 

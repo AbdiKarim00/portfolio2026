@@ -209,11 +209,11 @@ export default function PortfolioAbout() {
               <pre className="text-xs text-foreground/70 overflow-x-auto font-mono leading-relaxed">
 {`{
   id: 1,
-  title: "Project Name",
+  title: "Project Title",
   category: "Brand Identity",
-  description: "Brief description",
-  image: "/images/project.jpg",
-  details: "Full case study"
+  description: "Short overview",
+  image: "/images/your-project.jpg",
+  details: "Expanded case study"
 }`}
               </pre>
             </div>
