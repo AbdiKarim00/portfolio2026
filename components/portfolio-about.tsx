@@ -4,6 +4,7 @@ import { Download } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { useLanguage } from '@/components/language-provider'
 import { translations } from '@/lib/translations'
+import { cvConfig } from '@/lib/portfolio-data'
 
 export default function PortfolioAbout() {
   const { language } = useLanguage()
@@ -48,13 +49,9 @@ export default function PortfolioAbout() {
   const languages = ['English', 'Swahili', 'Mandarin']
 
   const handleDownloadCV = () => {
-    // Update the path below to match your CV location
-    // Example: '/documents/Abdikarim_Singir_CV.pdf'
-    // See PORTFOLIO_SETUP.md for detailed instructions
-    const cvPath = '/documents/Abdikarim_Singir_CV.pdf'
     const link = document.createElement('a')
-    link.href = cvPath
-    link.download = 'Abdikarim_Singir_CV.pdf'
+    link.href = cvConfig.cvPath
+    link.download = cvConfig.cvFileName
     document.body.appendChild(link)
     link.click()
     document.body.removeChild(link)
@@ -174,71 +171,6 @@ export default function PortfolioAbout() {
                   </div>
                 ))}
               </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Portfolio Upload Guidance Section */}
-        <div className="mt-24 pt-24 border-t border-border/40">
-          <h3 className="text-3xl md:text-4xl font-light text-foreground mb-8 tracking-tight">
-            {t.about.projectGuide}
-          </h3>
-          <div className="w-8 h-px bg-accent mb-12" />
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <div className="space-y-6">
-              <div>
-                <h4 className="text-sm uppercase tracking-widest text-muted-foreground mb-3 font-medium">
-                  {t.about.howToAdd}
-                </h4>
-                <div className="space-y-4 text-base text-foreground/80 font-light leading-relaxed">
-                  <p>
-                    {t.about.projectLocation} <code className="bg-secondary/50 px-2 py-1 rounded text-sm">lib/portfolio-data.ts</code> {t.about.projectFile}
-                  </p>
-                  <p>
-                    {t.about.projectInstructions} <code className="bg-secondary/50 px-1 rounded text-xs">PORTFOLIO_SETUP.md</code>.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-secondary/30 p-8 border border-border/40">
-              <h4 className="text-sm uppercase tracking-widest text-muted-foreground mb-4 font-medium">
-                {t.about.projectStructure}
-              </h4>
-              <pre className="text-xs text-foreground/70 overflow-x-auto font-mono leading-relaxed">
-{`{
-  id: 1,
-  title: "Project Title",
-  category: "Brand Identity",
-  description: "Short overview",
-  image: "/images/your-project.jpg",
-  details: "Expanded case study"
-}`}
-              </pre>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mt-12">
-            <div className="py-8 border-l-2 border-accent pl-6">
-              <h5 className="font-medium text-foreground mb-3">{t.about.uploadImages}</h5>
-              <p className="text-sm text-foreground/70 font-light leading-relaxed">
-                {t.about.uploadImagesDesc} <code className="bg-secondary/50 px-1 rounded text-xs">/public/images</code> {t.about.uploadImagesDesc2}
-              </p>
-            </div>
-
-            <div className="py-8 border-l-2 border-accent pl-6">
-              <h5 className="font-medium text-foreground mb-3">{t.about.editProjectData}</h5>
-              <p className="text-sm text-foreground/70 font-light leading-relaxed">
-                {t.about.editProjectDataDesc}
-              </p>
-            </div>
-
-            <div className="py-8 border-l-2 border-accent pl-6">
-              <h5 className="font-medium text-foreground mb-3">{t.about.customizeDetails}</h5>
-              <p className="text-sm text-foreground/70 font-light leading-relaxed">
-                {t.about.customizeDetailsDesc}
-              </p>
             </div>
           </div>
         </div>

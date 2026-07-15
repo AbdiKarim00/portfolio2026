@@ -181,6 +181,10 @@ export default function PortfolioContact() {
             {status === 'error' && (
               <p className="text-red-600 text-sm mt-4">{errorMessage || t.status.error}</p>
             )}
+
+            <p className="text-xs text-muted-foreground/70 mt-4 leading-relaxed">
+              {t.contact.privacy}
+            </p>
           </form>
         </div>
       </div>

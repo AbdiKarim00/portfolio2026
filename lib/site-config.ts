@@ -8,6 +8,7 @@
 export const siteConfig = {
   name: 'Abdikarim Singir',
   title: 'Senior Graphic Designer',
+  url: 'https://abdikarimsingir.com',
 
   // Contact Information
   email: 'abdulkarimsingir@gmail.com',
